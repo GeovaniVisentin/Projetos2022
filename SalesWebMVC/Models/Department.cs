@@ -8,7 +8,7 @@ namespace SalesWebMVC.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public ICollection<Seller> Seller { get; set; } = new List<Seller>();
+        public ICollection<Sellers> Seller { get; set; } = new List<Sellers>();
 
         public Department()
         {
@@ -20,7 +20,7 @@ namespace SalesWebMVC.Models
             Id = id;
             Name = name;
         }
-        public void AddSeler(Seller seller)
+        public void AddSeler(Sellers seller)
         {
             Seller.Add(seller);
         }
